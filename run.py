@@ -1,5 +1,10 @@
+"""
+Import section
+"""
+import sys
 import gspread
 from google.oauth2.service_account import Credentials
+from termcolor import colored
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -11,9 +16,3 @@ CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('love_ireland')
-
-ratings = SHEET.worksheet('ratings')
-
-data = ratings.get_all_values()
-
-print(data)
