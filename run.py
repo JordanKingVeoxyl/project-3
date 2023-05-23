@@ -36,3 +36,5 @@ def county_and_score(county_name, score):
     print(' along with their user scores.\n')
     for county_name, score in zip(county_name, score):
         print(colored(
+            (f' County title: {county_name}\n User score: {score} / 5 stars\n'),
+            'cyan'))
