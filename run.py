@@ -150,3 +150,8 @@ def retrieve_county():
         return retrieve_county()
     print(colored(('\n Happy exploring!'), 'magenta'))
     quit_repeat()
+
+def travel_guide_list(county):
+    """
+    Function to return a locations list & full guide instructions.
+    """
