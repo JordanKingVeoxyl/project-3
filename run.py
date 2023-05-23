@@ -85,3 +85,4 @@ def calculate_average_score(data):
     And returns an average of all the scores inputted.
     """
     average_score = []
+    for column in data:
