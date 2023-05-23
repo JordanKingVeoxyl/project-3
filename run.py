@@ -32,3 +32,5 @@ def county_and_score(county_name, score):
     """
     Function to return a list of the top 3 popular counties in Ireland & their scores together.
     """
+    print(' Below you shall find a list of available counties,')
+    print(' along with their user scores.\n')
