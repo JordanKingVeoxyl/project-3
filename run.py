@@ -109,3 +109,7 @@ def rate_or_retrieve():
         retrieve_county()
     elif option == '2':
         submit_score()
+    else:
+        print(colored(
+            ('\n Invalid choice. You may only choose 1 or 2\n'), 'red'))
+        return rate_or_retrieve()
