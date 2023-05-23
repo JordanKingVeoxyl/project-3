@@ -167,3 +167,16 @@ def travel_guide_list(county):
     print(colored(('\n Locations list:\n'), 'magenta'))
     for (location, closes_at, recommended_time_to_spend_at) in zip(location, closes_at, recommended_time_to_spend_at):
         print(colored((f' {location} - {closes_at}{recommended_time_to_spend_at}'), 'cyan'))
+        print(colored(('\n Guide Instructions:\n'), 'magenta'))
+    for guide_instruction in guide_instructions:
+        print(colored((guide_instruction), 'cyan'))
+
+def submit_score():
+    """
+    Function to display county names once more,
+    and allow the user to select a title to rate.
+    """
+    print('\n Select the county you would like to rate.')
+    print(' Choose the county by the numberical value.')
+    print(' Enter a score between 1-5. Whole numbers ONLY.')
+    print(' 1 being the worst, 5 the best.\n')
