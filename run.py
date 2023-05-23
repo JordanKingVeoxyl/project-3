@@ -77,3 +77,4 @@ def get_user_score():
     for ind in range(1, 4):
         column = scores.col_values(ind)
         columns.append(column[1:])
+    return columns
