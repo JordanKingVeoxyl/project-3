@@ -221,3 +221,9 @@ def user_scores():
         print(colored((' \nYou must enter a number between 1 and 5'), 'red'))
         user_scores()
     return score
+
+def quit_repeat():
+    """
+    Function to allow the user to either quit the program,
+    or restart it and select '1' or '2' again.
+    """
