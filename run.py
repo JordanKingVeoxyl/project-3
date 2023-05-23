@@ -199,3 +199,9 @@ def submit_score():
         return submit_score()
     print('\n Thank you for your review!')
     quit_repeat()
+
+def user_scores():
+    """
+    Accepts the user input to determine if the score is valid.
+    To be used within the 'submit_score' function.
+    """
