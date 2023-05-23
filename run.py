@@ -96,3 +96,11 @@ def calculate_average_score(data):
         average_score.append(round(average, 2))
 
     return average_score
+
+def rate_or_retrieve():
+    """
+    A function to determine which option the user would like to proceed with.
+    They may either rate a county they have previously explored,
+    Or get information/tour guide of a new county to explore to be able to review
+    at a later stage.
+    """
