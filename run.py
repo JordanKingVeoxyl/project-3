@@ -107,3 +107,5 @@ def rate_or_retrieve():
     option = input(" Make your selection, 1 county or 2 score:\n ")
     if option == '1':
         retrieve_county()
+    elif option == '2':
+        submit_score()
