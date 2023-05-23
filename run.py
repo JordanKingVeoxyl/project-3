@@ -135,3 +135,4 @@ def retrieve_county():
     print(' of a county that you can use instead:')
     random_county = choice_helper()
     print(random_county)
+    index_titles()
