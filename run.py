@@ -78,3 +78,9 @@ def get_user_score():
         column = scores.col_values(ind)
         columns.append(column[1:])
     return columns
+
+def calculate_average_score(data):
+    """
+    A mathmatical function that takes the data generated in the get_user_score(): function
+    And returns an average of all the scores inputted.
+    """
