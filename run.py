@@ -248,3 +248,8 @@ def main():
     county_name = county_titles()
     county_and_score(county_name, average_score)
     rate_or_retrieve()
+
+print(colored(("\n Welcome to Love Ireland. Let's begin!"), 'green'))
+print(colored((" Welcome to Love Ireland. Let's begin!"), 'white'))
+print(colored((" Welcome to Love Ireland. Let's begin!\n"), 'light_red'))
+main()
