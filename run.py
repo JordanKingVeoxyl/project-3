@@ -49,3 +49,6 @@ def county_titles():
     """
     counties = SHEET.worksheet('scores')
     county_names = []
+    for ind in range(1, 4):
+        county_name = counties.col_values(ind)
+        
