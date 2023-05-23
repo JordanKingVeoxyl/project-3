@@ -206,3 +206,11 @@ def user_scores():
     To be used within the 'submit_score' function.
     """
     score = []
+    while True:
+        try:
+            star_score = int(input(' Submit your score: \n '))
+            break
+        except ValueError:
+            print(colored(
+                (' \nYou must enter a number between 1 and 5'), 'red'))
+            continue
