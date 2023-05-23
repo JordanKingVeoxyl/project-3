@@ -197,3 +197,5 @@ def submit_score():
         print(colored(
             (' You may only choose one of the listed options.\n'), 'red'))
         return submit_score()
+    print('\n Thank you for your review!')
+    quit_repeat()
