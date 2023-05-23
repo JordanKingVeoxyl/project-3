@@ -86,3 +86,5 @@ def calculate_average_score(data):
     """
     average_score = []
     for column in data:
+        score_count = 0
+        score_total = 0
