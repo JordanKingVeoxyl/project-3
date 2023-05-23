@@ -47,3 +47,4 @@ def county_titles():
     """
     Function to return a list of the available county titles to choose from.
     """
+    counties = SHEET.worksheet('scores')
