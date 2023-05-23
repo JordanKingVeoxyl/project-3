@@ -61,3 +61,9 @@ def index_titles():
     """
     county_names = county_titles()
     index = 1
+    for county_name in county_names:
+        print(colored((f' {index}. {county_name}'), 'cyan'))
+        index += 1
+    for county_name in county_names:
+        print(colored((f' {index}. {county_name}'), 'cyan'))
+        index += 1
