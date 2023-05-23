@@ -148,3 +148,5 @@ def retrieve_county():
         print(colored(
             (' You may only choose one of the listed options.\n'), 'red'))
         return retrieve_county()
+    print(colored(('\n Happy exploring!'), 'magenta'))
+    quit_repeat()
