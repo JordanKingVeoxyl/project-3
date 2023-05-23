@@ -59,3 +59,5 @@ def index_titles():
     """
     Function to index popular counties
     """
+    county_names = county_titles()
+    index = 1
