@@ -137,3 +137,14 @@ def retrieve_county():
     print(random_county)
     index_titles()
     selection = input('\n Please select a county to retrieve information about:\n ')
+    if selection == '1':
+        travel_guide_list('dublin')
+    elif selection == '2':
+        travel_guide_list('cork')
+    elif selection == '3':
+        travel_guide_list('galway')
+    else:
+        print(colored(('\n Invalid choice.'), 'red'))
+        print(colored(
+            (' You may only choose one of the listed options.\n'), 'red'))
+        return retrieve_county()
