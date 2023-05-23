@@ -180,3 +180,4 @@ def submit_score():
     print(' Choose the county by the numberical value.')
     print(' Enter a score between 1-5. Whole numbers ONLY.')
     print(' 1 being the worst, 5 the best.\n')
+    index_titles()
