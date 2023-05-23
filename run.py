@@ -113,3 +113,10 @@ def rate_or_retrieve():
         print(colored(
             ('\n Invalid choice. You may only choose 1 or 2\n'), 'red'))
         return rate_or_retrieve()
+    
+def choice_helper():
+    """
+    A function which generates a random county from a list and prints it
+    in the event that the user needs a random choice to be generated for them due to 
+    not being able to make their own decision on what county to visit.
+    """
