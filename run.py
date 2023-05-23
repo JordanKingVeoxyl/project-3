@@ -92,3 +92,4 @@ def calculate_average_score(data):
             if num:
                 score_count += 1
                 score_total += int(num)
+        average = score_total / score_count
