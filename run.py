@@ -133,4 +133,5 @@ def retrieve_county():
     print(' Choose the county based on its numberical value.\n')
     print(' if youre having a difficult time choosing, heres a randomized selection')
     print(' of a county that you can use instead:')
-    
+    random_county = choice_helper()
+    print(random_county)
