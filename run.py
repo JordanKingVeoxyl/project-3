@@ -230,5 +230,21 @@ def quit_repeat():
     print('\n Enter: "R" to restart the application.')
     print('\n Enter: "Q" to quit the application.\n')
     option = input(" Enter your selection:\n ").upper()
-if option == 'R':
-        main()
+    if option == 'R':
+            main()
+    elif option == 'Q':
+            sys.exit('\n Thank you for your participation & slán!')
+        else:
+            print(colored((' \nInvalid choice. Enter: R or Q only please.\n'), 'red'))
+            return quit_repeat()
+
+def main():
+    """
+    Call all program functions.
+    """
+    greeting()
+    user_scores = get_user_score()
+    average_score = calculate_average_score(user_scores)
+    county_name = county_titles()
+    county_and_score(county_name, average_score)
+    rate_or_retrieve()
