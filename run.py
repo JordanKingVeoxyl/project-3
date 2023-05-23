@@ -27,3 +27,8 @@ def greeting():
     print(' the counties that you havent got to visit yet!')
     name = input('First of all, we would love to know your name. Please enter your name: ') 
     print('Hello,', name, '! Lets get started.')
+
+def county_and_score(county_name, score):
+    """
+    Function to return a list of the top 3 popular counties in Ireland & their scores together.
+    """
