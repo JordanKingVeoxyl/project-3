@@ -214,3 +214,9 @@ def user_scores():
             print(colored(
                 (' \nYou must enter a number between 1 and 5'), 'red'))
             continue
+    if star_score <= 5:
+        score.append(star_score)
+        return score
+    else:
+        print(colored((' \nYou must enter a number between 1 and 5'), 'red'))
+        user_scores()
