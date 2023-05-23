@@ -156,3 +156,7 @@ def travel_guide_list(county):
     Function to return a locations list & full guide instructions.
     """
     travel_guide = SHEET.worksheet(county)
+    all_rows = []
+    for ind in range(1, 5):
+        all_col = travel_guide.col_values(ind)
+        all_rows.append(all_col[1:])
