@@ -88,3 +88,7 @@ def calculate_average_score(data):
     for column in data:
         score_count = 0
         score_total = 0
+        for num in column:
+            if num:
+                score_count += 1
+                score_total += int(num)
