@@ -123,3 +123,14 @@ def choice_helper():
     number_choices = ['dublin', 'cork', 'galway']
     random_number_choices = random.choice(number_choices)
     print(random_number_choices)
+
+def retrieve_county():
+    """
+    A function to display popular county names once more,
+    and allow the user to select a county to retrieve information on.
+    """
+    print('\n Select the county you would like to retrieve information on.')
+    print(' Choose the county based on its numberical value.\n')
+    print(' if youre having a difficult time choosing, heres a randomized selection')
+    print(' of a county that you can use instead:')
+    
