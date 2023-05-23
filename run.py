@@ -51,4 +51,4 @@ def county_titles():
     county_names = []
     for ind in range(1, 4):
         county_name = counties.col_values(ind)
-        
+        county_names.append(county_name[0])
