@@ -164,3 +164,6 @@ def travel_guide_list(county):
     closes_at = all_rows[1]
     recommended_time_to_spend_at = all_rows[2]
     guide_instructions = all_rows[3]
+    print(colored(('\n Locations list:\n'), 'magenta'))
+    for (location, closes_at, recommended_time_to_spend_at) in zip(location, closes_at, recommended_time_to_spend_at):
+        print(colored((f' {location} - {closes_at}{recommended_time_to_spend_at}'), 'cyan'))
