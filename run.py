@@ -26,3 +26,4 @@ def greeting():
     print(' We would also love to offer you a personalised tour guide plan for')
     print(' the counties that you havent got to visit yet!')
     name = input('First of all, we would love to know your name. Please enter your name: ') 
+    print('Hello,', name, '! Lets get started.')
