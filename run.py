@@ -54,3 +54,8 @@ def county_titles():
         county_names.append(county_name[0])
     
     return county_names
+
+def index_titles():
+    """
+    Function to index popular counties
+    """
