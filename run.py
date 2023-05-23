@@ -220,3 +220,4 @@ def user_scores():
     else:
         print(colored((' \nYou must enter a number between 1 and 5'), 'red'))
         user_scores()
+    return score
