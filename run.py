@@ -104,3 +104,6 @@ def rate_or_retrieve():
     Or get information/tour guide of a new county to explore to be able to review
     at a later stage.
     """
+    option = input(" Make your selection, 1 county or 2 score:\n ")
+    if option == '1':
+        retrieve_county()
