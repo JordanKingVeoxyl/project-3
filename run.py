@@ -41,3 +41,9 @@ def county_and_score(county_name, score):
     print(' Enter "1" if you would like to learn how to explore a new county.')
     print(' Enter "2" if you would like to submit a score for a county you')
     print(' have already tried.\n')
+
+# This function is based on the 'Love Sandwiches' walk through.
+def county_titles():
+    """
+    Function to return a list of the available county titles to choose from.
+    """
