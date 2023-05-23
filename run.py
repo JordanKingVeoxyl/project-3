@@ -205,3 +205,4 @@ def user_scores():
     Accepts the user input to determine if the score is valid.
     To be used within the 'submit_score' function.
     """
+    score = []
