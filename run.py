@@ -227,3 +227,8 @@ def quit_repeat():
     Function to allow the user to either quit the program,
     or restart it and select '1' or '2' again.
     """
+    print('\n Enter: "R" to restart the application.')
+    print('\n Enter: "Q" to quit the application.\n')
+    option = input(" Enter your selection:\n ").upper()
+if option == 'R':
+        main()
