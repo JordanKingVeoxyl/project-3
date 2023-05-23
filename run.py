@@ -160,3 +160,7 @@ def travel_guide_list(county):
     for ind in range(1, 5):
         all_col = travel_guide.col_values(ind)
         all_rows.append(all_col[1:])
+    location = all_rows[0]
+    closes_at = all_rows[1]
+    recommended_time_to_spend_at = all_rows[2]
+    guide_instructions = all_rows[3]
