@@ -181,3 +181,5 @@ def submit_score():
     print(' Enter a score between 1-5. Whole numbers ONLY.')
     print(' 1 being the worst, 5 the best.\n')
     index_titles()
+    selection = input('\n Please select a county to submit a score for:\n ')
+    update_score = SHEET.worksheet('scores')
