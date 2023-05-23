@@ -93,3 +93,6 @@ def calculate_average_score(data):
                 score_count += 1
                 score_total += int(num)
         average = score_total / score_count
+        average_score.append(round(average, 2))
+
+    return average_score
