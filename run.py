@@ -155,3 +155,4 @@ def travel_guide_list(county):
     """
     Function to return a locations list & full guide instructions.
     """
+    travel_guide = SHEET.worksheet(county)
