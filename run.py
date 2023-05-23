@@ -73,3 +73,6 @@ def get_user_score():
     Function to get all of the user scores, and return data as a list of data.
     """
     scores = SHEET.worksheet('scores')
+    columns = []
+    for ind in range(1, 4):
+        column = scores.col_values(ind)
