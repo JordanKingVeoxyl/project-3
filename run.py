@@ -136,3 +136,4 @@ def retrieve_county():
     random_county = choice_helper()
     print(random_county)
     index_titles()
+    selection = input('\n Please select a county to retrieve information about:\n ')
