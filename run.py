@@ -38,3 +38,6 @@ def county_and_score(county_name, score):
         print(colored(
             (f' County title: {county_name}\n User score: {score} / 5 stars\n'),
             'cyan'))
+    print(' Enter "1" if you would like to learn how to explore a new county.')
+    print(' Enter "2" if you would like to submit a score for a county you')
+    print(' have already tried.\n')
