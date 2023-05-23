@@ -67,3 +67,8 @@ def index_titles():
     for county_name in county_names:
         print(colored((f' {index}. {county_name}'), 'cyan'))
         index += 1
+
+def get_user_score():
+    """
+    Function to get all of the user scores, and return data as a list of data.
+    """
