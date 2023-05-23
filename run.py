@@ -183,3 +183,17 @@ def submit_score():
     index_titles()
     selection = input('\n Please select a county to submit a score for:\n ')
     update_score = SHEET.worksheet('scores')
+    if selection == '1':
+        input_score = user_scores()
+        update_score.append_row([input_score[0], '', ''])
+    elif selection == '2':
+        input_score = user_scores()
+        update_score.append_row(['', input_score[0], ''])
+    elif selection == '3':
+        input_score = user_scores()
+        update_score.append_row(['', '', input_score[0]])
+    else:
+        print(colored(('\n Invalid choice.'), 'red'))
+        print(colored(
+            (' You may only choose one of the listed options.\n'), 'red'))
+        return submit_score()
