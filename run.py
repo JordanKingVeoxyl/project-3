@@ -120,3 +120,4 @@ def choice_helper():
     in the event that the user needs a random choice to be generated for them due to 
     not being able to make their own decision on what county to visit.
     """
+    number_choices = ['dublin', 'cork', 'galway']
