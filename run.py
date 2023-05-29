@@ -22,23 +22,25 @@ def greeting():
     """
     Function to ask the user to input their name and then greets them.
     """
-    print(' Hello! Welcome to Love Ireland. Here at Love Ireland we would love to hear')
-    print(' about your experiences with the top most loved counties in Ireland.')
-    print(' We would also love to offer you a personalised tour guide plan for')
-    print(' the counties that you havent got to visit yet!')
-    name = input('First of all, we would love to know your name. Please enter your name: ')
+    print(' Hello! Welcome to Love Ireland. Here at Love Ireland we would')
+    print(' love to hear about your experiences with the top most loved')
+    print(' counties in Ireland.')
+    print(' We would also love to offer you a personalised tour')
+    print(' guide plan for the counties that you havent got to visit yet!')
+    name = input('We would love to know your name. Please enter your name: ')
     print('Hello,', name, '! Lets get started.')
 
 
 def county_and_score(county_name, score):
     """
-    Function to return a list of the top 3 popular counties in Ireland & their scores together.
+    Function to return a list of the top 3 popular counties in
+    Ireland & their scores together.
     """
     print(' Below you shall find a list of available counties,')
     print(' along with their user scores.\n')
     for county_name, score in zip(county_name, score):
         print(colored(
-            (f' County title: {county_name}\n User score: {score} / 5 stars\n'),
+            (f' County: {county_name}\n User score: {score} / 5 stars\n'),
             'cyan'))
     print(' Enter "1" if you would like to learn how to explore a new county.')
     print(' Enter "2" if you would like to submit a score for a county you')
@@ -86,7 +88,8 @@ def get_user_score():
 
 def calculate_average_score(data):
     """
-    A mathmatical function that takes the data generated in the get_user_score(): function
+    A mathmatical function that takes the data generated
+    in the get_user_score(): function
     And returns an average of all the scores inputted.
     """
     average_score = []
@@ -107,8 +110,8 @@ def rate_or_retrieve():
     """
     A function to determine which option the user would like to proceed with.
     They may either rate a county they have previously explored,
-    Or get information/tour guide of a new county to explore to be able to review
-    at a later stage.
+    Or get information/tour guide of a new county
+    to explore to be able to review at a later stage.
     """
     option = input(" Make your selection, 1 county or 2 score:\n ")
     if option == '1':
@@ -124,7 +127,9 @@ def rate_or_retrieve():
 def choice_helper():
     """
     A function which generates a random county from a list and prints it
-    in the event that the user needs a random choice to be generated for them due to not being able to make their own decision on what county to visit.
+    in the event that the user needs a random choice to
+    be generated for them due to not being able to make their own decision on
+    what county to visit.
     """
     number_choices = ['dublin', 'cork', 'galway']
     random_number_choices = random.choice(number_choices)
@@ -138,12 +143,12 @@ def retrieve_county():
     """
     print('\n Select the county you would like to retrieve information on.')
     print(' Choose the county based on its numberical value.\n')
-    print(' if youre having a difficult time choosing, heres a randomized selection')
+    print(' if youre having a difficult time, heres a randomized selection')
     print(' of a county that you can use instead:')
     random_county = choice_helper()
     print(random_county)
     index_titles()
-    selection = input('\n Please select a county to retrieve information about:\n ')
+    selection = input('\n Please select a county to get information about:\n ')
     if selection == '1':
         travel_guide_list('dublin')
     elif selection == '2':
@@ -170,11 +175,11 @@ def travel_guide_list(county):
         all_rows.append(all_col[1:])
     location = all_rows[0]
     closes_at = all_rows[1]
-    recommended_time_to_spend_at = all_rows[2]
+    rec_time = all_rows[2]
     guide_instructions = all_rows[3]
     print(colored(('\n Locations list:\n'), 'magenta'))
-    for (location, closes_at, recommended_time_to_spend_at) in zip(location, closes_at, recommended_time_to_spend_at):
-        print(colored((f' {location} - {closes_at}{recommended_time_to_spend_at}'), 'cyan'))
+    for (location, closes_at, rec_time) in zip(location, closes_at, rec_time):
+        print(colored((f' {location} - {closes_at}{rec_time}'), 'cyan'))
         print(colored(('\n Guide Instructions:\n'), 'magenta'))
     for guide_instruction in guide_instructions:
         print(colored((guide_instruction), 'cyan'))
@@ -246,7 +251,7 @@ def quit_repeat():
     elif option == 'Q':
         sys.exit('\n Thank you for your participation & slán!')
         else:
-            print(colored((' \nInvalid choice. Enter: R or Q only please.\n'), 'red'))
+            print(' \nInvalid choice. Enter: R or Q only please.\n')
             return quit_repeat()
 
 
