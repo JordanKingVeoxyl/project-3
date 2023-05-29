@@ -17,6 +17,7 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('love_ireland')
 
+
 def greeting():
     """
     Function to ask the user to input their name and then greets them.
@@ -25,8 +26,9 @@ def greeting():
     print(' about your experiences with the top most loved counties in Ireland.')
     print(' We would also love to offer you a personalised tour guide plan for')
     print(' the counties that you havent got to visit yet!')
-    name = input('First of all, we would love to know your name. Please enter your name: ') 
+    name = input('First of all, we would love to know your name. Please enter your name: ')
     print('Hello,', name, '! Lets get started.')
+
 
 def county_and_score(county_name, score):
     """
@@ -42,6 +44,7 @@ def county_and_score(county_name, score):
     print(' Enter "2" if you would like to submit a score for a county you')
     print(' have already tried.\n')
 
+
 # This function is based on the 'Love Sandwiches' walk through.
 def county_titles():
     """
@@ -52,8 +55,8 @@ def county_titles():
     for ind in range(1, 4):
         county_name = counties.col_values(ind)
         county_names.append(county_name[0])
-    
     return county_names
+
 
 def index_titles():
     """
@@ -68,6 +71,7 @@ def index_titles():
         print(colored((f' {index}. {county_name}'), 'cyan'))
         index += 1
 
+
 def get_user_score():
     """
     Function to get all of the user scores, and return data as a list of data.
@@ -78,6 +82,7 @@ def get_user_score():
         column = scores.col_values(ind)
         columns.append(column[1:])
     return columns
+
 
 def calculate_average_score(data):
     """
@@ -97,6 +102,7 @@ def calculate_average_score(data):
 
     return average_score
 
+
 def rate_or_retrieve():
     """
     A function to determine which option the user would like to proceed with.
@@ -113,16 +119,17 @@ def rate_or_retrieve():
         print(colored(
             ('\n Invalid choice. You may only choose 1 or 2\n'), 'red'))
         return rate_or_retrieve()
-    
+
+
 def choice_helper():
     """
     A function which generates a random county from a list and prints it
-    in the event that the user needs a random choice to be generated for them due to 
-    not being able to make their own decision on what county to visit.
+    in the event that the user needs a random choice to be generated for them due to not being able to make their own decision on what county to visit.
     """
     number_choices = ['dublin', 'cork', 'galway']
     random_number_choices = random.choice(number_choices)
     print(random_number_choices)
+
 
 def retrieve_county():
     """
@@ -151,6 +158,7 @@ def retrieve_county():
     print(colored(('\n Happy exploring!'), 'magenta'))
     quit_repeat()
 
+
 def travel_guide_list(county):
     """
     Function to return a locations list & full guide instructions.
@@ -170,6 +178,7 @@ def travel_guide_list(county):
         print(colored(('\n Guide Instructions:\n'), 'magenta'))
     for guide_instruction in guide_instructions:
         print(colored((guide_instruction), 'cyan'))
+
 
 def submit_score():
     """
@@ -200,6 +209,7 @@ def submit_score():
     print('\n Thank you for your review!')
     quit_repeat()
 
+
 def user_scores():
     """
     Accepts the user input to determine if the score is valid.
@@ -222,6 +232,7 @@ def user_scores():
         user_scores()
     return score
 
+
 def quit_repeat():
     """
     Function to allow the user to either quit the program,
@@ -231,12 +242,13 @@ def quit_repeat():
     print('\n Enter: "Q" to quit the application.\n')
     option = input(" Enter your selection:\n ").upper()
     if option == 'R':
-            main()
+        main()
     elif option == 'Q':
-            sys.exit('\n Thank you for your participation & slán!')
+        sys.exit('\n Thank you for your participation & slán!')
         else:
             print(colored((' \nInvalid choice. Enter: R or Q only please.\n'), 'red'))
             return quit_repeat()
+
 
 def main():
     """
@@ -248,6 +260,7 @@ def main():
     county_name = county_titles()
     county_and_score(county_name, average_score)
     rate_or_retrieve()
+
 
 print(colored(("\n Welcome to Love Ireland. Let's begin!"), 'green'))
 print(colored((" Welcome to Love Ireland. Let's begin!"), 'white'))
