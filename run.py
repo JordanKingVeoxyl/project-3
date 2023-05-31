@@ -223,7 +223,7 @@ def user_scores():
         except ValueError:
             print(' \nYou must enter a number between 1 and 5')
             continue
-    if star_score 0 < a >= 5:
+    if star_score >= 1 and star_score <= 5:
         score.append(star_score)
         return score
     else:
