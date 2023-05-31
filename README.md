@@ -55,4 +55,4 @@ In the future I would like to implement a way for users to add counties they've 
 ## Design
 
 ### Wireframes:
-![App functionality Wireframe](assets/images/readme-wireframe.png)
+![App functionality Wireframe](assets/images/readme-wireframe.jpg)
