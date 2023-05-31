@@ -170,9 +170,13 @@ def travel_guide_list(county):
     closes_at = all_rows[1]
     rec_time = all_rows[2]
     guide_instructions = all_rows[3]
+
     print('\n Locations list:\n')
+    print('Location - Closing Time - Recommended Time')
+    print('-------------------------------------------')
     for (location, closes_at, rec_time) in zip(location, closes_at, rec_time):
-        print(f' {location} - {closes_at}{rec_time}')
+        print(f' {location} - {closes_at} - {rec_time}')
+    
     print('\n Guide Instructions:\n')
     for guide_instruction in guide_instructions:
         print(guide_instruction)
