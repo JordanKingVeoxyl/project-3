@@ -127,7 +127,6 @@ def choice_helper():
     """
     number_choices = ['dublin', 'cork', 'galway']
     random_number_choices = random.choice(number_choices)
-    print(random_number_choices)
     return random_number_choices
 
 
