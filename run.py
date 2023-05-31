@@ -262,6 +262,4 @@ def main():
 
 
 print("\n Welcome to Love Ireland. Let's begin!")
-print(" Welcome to Love Ireland. Let's begin!")
-print(" Welcome to Love Ireland. Let's begin!\n")
 main()
