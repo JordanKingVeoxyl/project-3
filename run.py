@@ -173,7 +173,7 @@ def travel_guide_list(county):
     print('\n Locations list:\n')
     for (location, closes_at, rec_time) in zip(location, closes_at, rec_time):
         print(f' {location} - {closes_at}{rec_time}')
-        print('\n Guide Instructions:\n')
+    print('\n Guide Instructions:\n')
     for guide_instruction in guide_instructions:
         print(guide_instruction)
 
