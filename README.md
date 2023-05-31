@@ -4,7 +4,7 @@ Love Ireland is an application that educates people on tour guide routes for spe
 
 ![Site view across devices](assets/images/readme-amiresponsive.png)
 
-The Layer Cakes site is live, the links can be found [HERE](https://love-ireland.herokuapp.com/)
+The Love Ireland site is live, the links can be found [HERE](https://love-ireland.herokuapp.com/)
 
 
 ## Table of Contents
