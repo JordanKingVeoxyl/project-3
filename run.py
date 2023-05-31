@@ -176,7 +176,6 @@ def travel_guide_list(county):
     print('-------------------------------------------')
     for (location, closes_at, rec_time) in zip(location, closes_at, rec_time):
         print(f' {location} - {closes_at} - {rec_time}')
-    
     print('\n Guide Instructions:\n')
     for guide_instruction in guide_instructions:
         print(guide_instruction)
@@ -246,8 +245,8 @@ def quit_repeat():
     elif option == 'Q':
         sys.exit('\n Thank you for your participation & slán!')
     else:
-            print(' \nInvalid choice. Enter: R or Q only please.\n')
-            return quit_repeat()
+        print(' \nInvalid choice. Enter: R or Q only please.\n')
+        return quit_repeat()
 
 
 def main():
