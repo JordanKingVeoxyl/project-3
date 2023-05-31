@@ -250,7 +250,7 @@ def quit_repeat():
         main()
     elif option == 'Q':
         sys.exit('\n Thank you for your participation & slán!')
-        else:
+    else:
             print(' \nInvalid choice. Enter: R or Q only please.\n')
             return quit_repeat()
 
