@@ -67,9 +67,6 @@ def index_titles():
     for county_name in county_names:
         print(f' {index}. {county_name}')
         index += 1
-    for county_name in county_names:
-        print(f' {index}. {county_name}')
-        index += 1
 
 
 def get_user_score():
