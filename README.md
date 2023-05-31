@@ -56,3 +56,26 @@ In the future I would like to implement a way for users to add counties they've 
 
 ### Wireframes:
 ![App functionality Wireframe](assets/images/readme-wireframe.jpg)
+
+## Features
+
+### Existing Features:
+
+#### Landing Page:
+![Landing Page](assets/images/readme-landingpage.png)
+
+#### Greeting and Receive a guide or rate a county:
+![Greeting and Receive Guide or Score a County](assets/images/readme-greet-and-score.png)
+
+#### Randomized Suggestion and County Selection:
+![County Selection](assets/images/readme-suggestion-and-county-selection.png)
+
+#### Tour Guide:
+![Locations and times](assets/images/readme-location-and-times.png)
+![Guidance](assets/images/readme-guidance.png)
+
+#### Submit Score:
+![Submit Rating](assets/images/readme-submit-score.png)
+
+#### Restart or Quit app:
+![Restart or Quit](assets/images/readme-quit-restart.png)
