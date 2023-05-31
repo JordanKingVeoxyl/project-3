@@ -4,7 +4,6 @@ Import section
 import sys
 import gspread
 from google.oauth2.service_account import Credentials
-from termcolor import colored
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -39,9 +38,7 @@ def county_and_score(county_name, score):
     print(' Below you shall find a list of available counties,')
     print(' along with their user scores.\n')
     for county_name, score in zip(county_name, score):
-        print(colored(
-            (f' County: {county_name}\n User score: {score} / 5 stars\n'),
-            'cyan'))
+        print(f' County: {county_name}\n User score: {score} / 5 stars\n')
     print(' Enter "1" if you would like to learn how to explore a new county.')
     print(' Enter "2" if you would like to submit a score for a county you')
     print(' have already tried.\n')
@@ -67,10 +64,10 @@ def index_titles():
     county_names = county_titles()
     index = 1
     for county_name in county_names:
-        print(colored((f' {index}. {county_name}'), 'cyan'))
+        print(f' {index}. {county_name}')
         index += 1
     for county_name in county_names:
-        print(colored((f' {index}. {county_name}'), 'cyan'))
+        print(f' {index}. {county_name}')
         index += 1
 
 
@@ -119,8 +116,7 @@ def rate_or_retrieve():
     elif option == '2':
         submit_score()
     else:
-        print(colored(
-            ('\n Invalid choice. You may only choose 1 or 2\n'), 'red'))
+        print('\n Invalid choice. You may only choose 1 or 2\n')
         return rate_or_retrieve()
 
 
@@ -156,11 +152,10 @@ def retrieve_county():
     elif selection == '3':
         travel_guide_list('galway')
     else:
-        print(colored(('\n Invalid choice.'), 'red'))
-        print(colored(
-            (' You may only choose one of the listed options.\n'), 'red'))
+        print('\n Invalid choice.')
+        print(' You may only choose one of the listed options.\n')
         return retrieve_county()
-    print(colored(('\n Happy exploring!'), 'magenta'))
+    print('\n Happy exploring!')
     quit_repeat()
 
 
@@ -177,12 +172,12 @@ def travel_guide_list(county):
     closes_at = all_rows[1]
     rec_time = all_rows[2]
     guide_instructions = all_rows[3]
-    print(colored(('\n Locations list:\n'), 'magenta'))
+    print('\n Locations list:\n')
     for (location, closes_at, rec_time) in zip(location, closes_at, rec_time):
-        print(colored((f' {location} - {closes_at}{rec_time}'), 'cyan'))
-        print(colored(('\n Guide Instructions:\n'), 'magenta'))
+        print(f' {location} - {closes_at}{rec_time}')
+        print('\n Guide Instructions:\n')
     for guide_instruction in guide_instructions:
-        print(colored((guide_instruction), 'cyan'))
+        print(guide_instruction)
 
 
 def submit_score():
@@ -207,9 +202,8 @@ def submit_score():
         input_score = user_scores()
         update_score.append_row(['', '', input_score[0]])
     else:
-        print(colored(('\n Invalid choice.'), 'red'))
-        print(colored(
-            (' You may only choose one of the listed options.\n'), 'red'))
+        print('\n Invalid choice.')
+        print(' You may only choose one of the listed options.\n')
         return submit_score()
     print('\n Thank you for your review!')
     quit_repeat()
@@ -226,14 +220,13 @@ def user_scores():
             star_score = int(input(' Submit your score: \n '))
             break
         except ValueError:
-            print(colored(
-                (' \nYou must enter a number between 1 and 5'), 'red'))
+            print(' \nYou must enter a number between 1 and 5')
             continue
     if star_score <= 5:
         score.append(star_score)
         return score
     else:
-        print(colored((' \nYou must enter a number between 1 and 5'), 'red'))
+        print(' \nYou must enter a number between 1 and 5')
         user_scores()
     return score
 
@@ -267,7 +260,7 @@ def main():
     rate_or_retrieve()
 
 
-print(colored(("\n Welcome to Love Ireland. Let's begin!"), 'green'))
-print(colored((" Welcome to Love Ireland. Let's begin!"), 'white'))
-print(colored((" Welcome to Love Ireland. Let's begin!\n"), 'light_red'))
+print("\n Welcome to Love Ireland. Let's begin!")
+print(" Welcome to Love Ireland. Let's begin!")
+print(" Welcome to Love Ireland. Let's begin!\n")
 main()
