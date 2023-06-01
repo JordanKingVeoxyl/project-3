@@ -15,6 +15,7 @@ The Love Ireland site is live, the links can be found [HERE](https://love-irelan
   + [Communication](#communication "Communication")
   + [Current User Goals](#current-user-goals "Current User Goals")
   + [New User Goals](#new-user-goals "New User Goals")
+  + [Future Goals](#future-goals "Future Goals")
 + [Design](#design "Design")
 + [Features](#features "Features")
   + [Existing Features](#existing-features "Existing Features")
