@@ -97,3 +97,7 @@ In testing the function in which is responsible for allowing the user to give a 
 When testing the app in Heroku, I realised that I had than imported the random package into my code. I quickly done this and it resolved the issue when generating a randomly generated county for the user to choose from if they couldn't make their mind up when selecting. 
  
 When testing my code through the Code Institute PEP8 testing app, I noticed that a lot of my printed statements had too many characters inside of them to fit into the maximum width that the Heroku app displays. To fix this I broke up my lines of code by adding more print statements and putting less than 80 characters in each of them.
+
+### Validator Testing
+- My code was tested with [Code Institute PEP8 Heroku Tester](https://pep8ci.herokuapp.com/).
+![CI PEP8 Validation Linter](assets/images/readme-cipep8validator.png)
