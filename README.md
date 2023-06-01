@@ -127,3 +127,20 @@ The site was deployed to Heroku. The steps to deploy are as follows:
 - - enter in username + password
 - - heroku apps
 - - heroku git:remote -a my-app-name 
+
+## Credits
+
+### Content
+The mentor [Lauren-Nicole](https://github.com/CluelessBiker) was a huge help to me throughout the building of this project. She shared with me a [previous project](https://github.com/CluelessBiker/project3-layer-cakes) she worked on when I shared my framework to her because of how similar some of the functions I set to build were to the ones she had already built. She was very kind and supported me when I was frustrated with not being able to implement my ideas to actual code. She was especially helpful when it came to the google sheets API. She also allowed me to use the template of her README file. 
+
+My mentor Martina Terlevic was a huge help to me as usual who not only provided me with hints at how to go about fixing my code but also calmed me down during my moments of panic and hesitancy. She was very good at breaking down very difficult concepts into simple to understand statements in which I needed greatly. She pointed out many of the bugs that I fixed when we had our meetings with each other such as the user being able to enter negative integers or 0 into the score system which was only supposed to allow the user to score a county 1 through 5.
+
+The start of the project is based on the 'Love Sandwiches' walk through, and the three functions to obtain the column data & generate an average have been used in this project.
+
+[StackOverflow](https://stackoverflow.com/questions/43976509/using-greater-than-and-less-than-or-if-statments) educated me in how to fix an issue I had with comparison methods and the use of the 'and' method.
+
+Thanks to my friend Killian who helped be a second pair of eyes when checking over my code and pointing out a few errors I made such as how I set up my main() function to implement all of of the previous functions I made into a logical, functional order.
+
+The code for how to exit the application came from [Geeks for Geeks](https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/).
+
+The information on how to iterate through three lists simultaneously came from [Geeks for Geeks](https://www.geeksforgeeks.org/python-iterate-multiple-lists-simultaneously/).
