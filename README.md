@@ -22,12 +22,11 @@ The Love Ireland site is live, the links can be found [HERE](https://love-irelan
   + [Validator Testing](#validator-testing "Validator Testing")
   + [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
 + [Technologies Used](#technologies-used "Technologies Used")
-  + [Main Languages Used](#main-languages-used "Main Languages Used")
+  + [Main Languages Used](#languages-used "Languages Used")
   + [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-used "Frameworks, Libraries & Programs Used")
 + [Deployment](#deployment "Deployment")
 + [Credits](#credits "Credits")
   + [Content](#content "Content")
-  + [Media](#media "Media")
 
 ## UX
 
@@ -79,3 +78,11 @@ In the future I would like to implement a way for users to add counties they've 
 
 #### Restart or Quit app:
 ![Restart or Quit](assets/images/readme-quit-restart.png)
+
+### Features Left to Implement
+- Allow users to submit their own guides for counties that they've visited that aren't yet listed as options.
+- Add a new feature that allows the user to add an extra step to the guide from information they've gathered outside of the application. Also allow them to add the location of this step to 'locations' also.
+- Add links from different platforms that can give images of the locations I'm referring to so the user doesn't have to search for them outside of the app themselves. 
+- Add more counties to choose to get guides from and score.
+- A notes section in which the user could give their reasonings for why they gave a county the score that they did.
+- Add a way to store the users name so that you don't have to repeatedly ask them for it when they restart the program and have already entered their name.
