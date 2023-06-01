@@ -104,3 +104,8 @@ When testing my code through the Code Institute PEP8 testing app, I noticed that
 ## Technologies Used
 ### Languages Used
 - Python
+
+### Frameworks, Libraries & Programs Used
+- GitHub - to store my repository for submission.
+- Heroku - to deploy the live version of the terminal.
+- Paper - to plan out a framework for how my app would function.
