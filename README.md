@@ -86,3 +86,14 @@ In the future I would like to implement a way for users to add counties they've 
 - Add more counties to choose to get guides from and score.
 - A notes section in which the user could give their reasonings for why they gave a county the score that they did.
 - Add a way to store the users name so that you don't have to repeatedly ask them for it when they restart the program and have already entered their name.
+
+## Testing
+In testing the function that is responsible for asking the user their name and prints their inputted name with a greeting, I noticed that if the user was to leave their name blank and press enter, the greeting would have an empty space in it. To tackle this issue, I added a placeholder name 'guest' to the function so that if the user was to leave the prompt blank, they would be greeted as a guest instead.
+
+While testing the function that prints out a random selection for the user if they aren't able to make their minds up for what county they'd like to select, I noticed that the function would print out 'None' after the county name. This was due to not having a return method in the function. When I added this, I then noticed that the county name was being printed out twice as a duplicate. To fix this, I removed the print statement from the function itself, and added it to its function that it was embedded to.
+
+In testing the function in which is responsible for allowing the user to give a a county a score out of 5, I noticed that the user was able to give a negative integer score, or a score of 0. This was a problem because it was not listed as an option in the prompts, and drastically unfairly changed the average score when the user did it. I had some trouble with this because I couldn't figure out how to word the code, but eventually realised that I had to be more specific with it and you the 'and' method as well as use the variable 'star score' twice instead of once like so 'if star_score >= 1 and star_score <= 5'
+
+When testing the app in Heroku, I realised that I had than imported the random package into my code. I quickly done this and it resolved the issue when generating a randomly generated county for the user to choose from if they couldn't make their mind up when selecting. 
+ 
+When testing my code through the Code Institute PEP8 testing app, I noticed that a lot of my printed statements had too many characters inside of them to fit into the maximum width that the Heroku app displays. To fix this I broke up my lines of code by adding more print statements and putting less than 80 characters in each of them.
