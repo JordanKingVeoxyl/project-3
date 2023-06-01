@@ -27,7 +27,7 @@ def greeting():
     print(' counties in Ireland.')
     print(' We would also love to offer you a personalised tour')
     print(' guide plan for the counties that you havent got to visit yet!')
-    name = input('We would love to know your name. Please enter your name (or leave it blank): ')
+    name = input('We would love to know your name. Please enter your name: ')
     if name.strip() == '':
         name = "Guest"
     print('Hello,', name, '! Lets get started.')
