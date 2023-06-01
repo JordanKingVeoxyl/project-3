@@ -109,3 +109,21 @@ When testing my code through the Code Institute PEP8 testing app, I noticed that
 - GitHub - to store my repository for submission.
 - Heroku - to deploy the live version of the terminal.
 - Paper - to plan out a framework for how my app would function.
+
+## Deployment
+The site was deployed to Heroku. The steps to deploy are as follows:
+- log in to heroku
+- create a new app
+- navigate to settings
+- add the following KEY/VALUE pairs:
+- - CREDS + copy/paste data from creds.json file
+- - PORT + 8000
+- add build packs (in this order)
+- - Python
+- - nodejs
+- go to GitPod terminal
+- type the following commands into the terminal:
+- - heroku login -i
+- - enter in username + password
+- - heroku apps
+- - heroku git:remote -a my-app-name 
