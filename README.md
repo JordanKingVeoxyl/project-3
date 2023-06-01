@@ -20,7 +20,6 @@ The Love Ireland site is live, the links can be found [HERE](https://love-irelan
   + [Existing Features](#existing-features "Existing Features")
 + [Testing](#testing "Testing")
   + [Validator Testing](#validator-testing "Validator Testing")
-  + [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
 + [Technologies Used](#technologies-used "Technologies Used")
   + [Main Languages Used](#languages-used "Languages Used")
   + [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-used "Frameworks, Libraries & Programs Used")
@@ -101,3 +100,7 @@ When testing my code through the Code Institute PEP8 testing app, I noticed that
 ### Validator Testing
 - My code was tested with [Code Institute PEP8 Heroku Tester](https://pep8ci.herokuapp.com/).
 ![CI PEP8 Validation Linter](assets/images/readme-cipep8validator.png)
+
+## Technologies Used
+### Languages Used
+- Python
